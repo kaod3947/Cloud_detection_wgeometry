@@ -1,0 +1,7 @@
+venv/
+__pycache__/
+*.pyc
+*.pth
+*.tif
+*.ckpt
+.idea/
