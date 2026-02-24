@@ -17,6 +17,13 @@ test
 > [!NOTE]
 > callout test
 
+
+```python
+code box test
+```
+
+this is a 'test sentence' with typing
+
 ## Method
 Training cloud/cloud shadow detection model with LandSat8/9 imagery(only RGBN bands)
 1. Compare between two train method (Use only imagery/Use with angle information)
