@@ -22,7 +22,7 @@ test
 code box test
 ```
 
-this is a 'test sentence' with typing
+this is a `test sentence` with typing
 
 ## Method
 Training cloud/cloud shadow detection model with LandSat8/9 imagery(only RGBN bands)
