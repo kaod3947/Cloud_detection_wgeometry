@@ -1,8 +1,8 @@
-# Cloud and Cloud Shadow Segmentation for High-Resolution Satellite Imagery
+# Cloud and Cloud Shadow Segmentation for Satellite Imagery
 
 ## Overview
 This project focuses on cloud and cloud shadow segmentation 
-in high-resolution satellite imagery using deep learning. 
+in satellite imagery using deep learning. 
 
 To overcome spectral limitations (RGBN only), 
 geometric information such as solar and sensor angles 
@@ -11,14 +11,20 @@ is integrated into the model architecture.
 ## Motivation
 Accurate cloud masking is critical for reliable 
 surface analysis and downstream geospatial applications. 
-However, high-resolution commercial imagery often lacks 
-rich spectral bands, making cloud detection challenging.
+However, commercial imagery often lacks rich spectral bands,
+making cloud detection challenging.
+ATBD 없이 Quick Creation of Cloud mask
 
 ## Method
-- Backbone: DeepLabV3
+Training cloud/cloud shadow detection model with LandSat8/9 imagery(only RGBN bands)
+1. Compare between two train method (Use only imagery/Use with angle information)
+- Backbone: DeepLabV3+
 - Input: RGBN + angle features
 - Fusion Strategy: Early feature fusion
 - Loss: Cross-entropy / Focal Loss
+
+2. Compare with other cloud/cloud shadow detection model
+3. Develop model using different architecture
 
 ## Repository Structure
 models/        → network architecture
@@ -27,11 +33,9 @@ train.py       → training script
 inference.py   → inference script
 
 ## Installation
-
 pip install -r requirements.txt
 
 ## Train
-
 python train.py
 
 ## Results
@@ -41,7 +45,6 @@ python train.py
 | + Angle Fusion | 0.78 |
 
 ## Future Work
-
 - Multi-satellite generalization
 - Domain adaptation
 - Temporal consistency modeling
