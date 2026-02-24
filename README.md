@@ -18,6 +18,7 @@ is integrated into the model architecture.
 test
 
 ## Method
+### Model
 Training cloud/cloud shadow detection model with LandSat8/9 imagery(only RGBN bands)
 1. Compare between two train method (Use only imagery/Use with angle information) 
 - Backbone: DeepLabV3+
@@ -27,6 +28,13 @@ Training cloud/cloud shadow detection model with LandSat8/9 imagery(only RGBN ba
 
 2. Compare with other cloud/cloud shadow detection model
 3. Develop model using different architecture
+
+### Data
+| Satellite | Number | Date |
+|-------|------|------|
+| LandSat8/9 | 10 | 0.72 |
+| Sentinel-2 | TBA | TBA |
+
 
 ## Setup
 - Python
