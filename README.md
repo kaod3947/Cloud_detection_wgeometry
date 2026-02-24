@@ -1,6 +1,5 @@
 # Cloud and Cloud Shadow Segmentation for Satellite Imagery
 
-## Overview
 This project focuses on cloud and cloud shadow segmentation 
 in satellite imagery using deep learning. 
 
@@ -8,12 +7,12 @@ To overcome spectral limitations (RGBN only),
 geometric information such as solar and sensor angles 
 is integrated into the model architecture.
 
-## Motivation
-Accurate cloud masking is critical for reliable 
-surface analysis and downstream geospatial applications. 
-However, commercial imagery often lacks rich spectral bands,
-making cloud detection challenging.
-ATBD 없이 Quick Creation of Cloud mask
+## Table of Contents
+- [Introduction](#Introduction)
+- [Method](#Method)
+
+## Introduction
+test
 
 ## Method
 Training cloud/cloud shadow detection model with LandSat8/9 imagery(only RGBN bands)
