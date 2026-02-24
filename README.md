@@ -19,7 +19,7 @@ test
 
 ## Method
 Training cloud/cloud shadow detection model with LandSat8/9 imagery(only RGBN bands)
-1. [ ] Compare between two train method (Use only imagery/Use with angle information)
+1. Compare between two train method (Use only imagery/Use with angle information)  [ ] 
 - Backbone: DeepLabV3+
 - Input: RGBN + angle features
 - Fusion Strategy: Early feature fusion
